@@ -1,0 +1,85 @@
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 30%;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 10px 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 32px;
+  background: black;
+  outline: 2px solid black;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+@media all and (max-width:30em) {
+  button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+.loading {
+  text-align: center;
+}
+
+.loading img {
+  width: 200px;
+}
+
+footer {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.error {
+  color: #f44336;
+  font-style: italic;
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-card {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.weather-card img {
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Weather</h1>
+  <form>
+    <label>Enter a Location</label>
+    <input>
+    <button type="submit">Get Weather</button>
+  </form>
+  <div class="loading">
+    <img src="https://i.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.webp">
+  </div>
+  <div class="error"></div>
+  <div class="results"></div>
+  <footer>
+    <small>Weather data provided by <a href="https://www.metaweather.com/api/">MetaWeather.com</a></small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
