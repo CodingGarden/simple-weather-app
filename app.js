@@ -36,11 +36,11 @@ function getDayCard(day) {
 
 async function getWeather(name) {
   results.innerHTML = '';
-  const response = await fetch(`http://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${name}`);
+  const response = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${name}`);
   const json = await response.json();
   const [location] = json;
   if (location) {
-    const response2 = await fetch(`http://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${location.woeid}`);
+    const response2 = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${location.woeid}`);
     const json2 = await response2.json();
     if (json2.consolidated_weather) {
       let html = '';
